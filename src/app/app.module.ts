@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { EventsPage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { MyEventsPage } from '../pages/myevents/myevents';
+import { CreateEventPage } from '../pages/createevent/createevent'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -16,7 +17,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     EventsPage,
     ListPage,
-    MyEventsPage
+    MyEventsPage,
+    CreateEventPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     EventsPage,
     ListPage,
-    MyEventsPage
+    MyEventsPage,
+    CreateEventPage
   ],
   providers: [
     StatusBar,

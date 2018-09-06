@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Create Event</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <h3>Create event</h3>
+    <ion-list>
+        <ion-item>
+          <ion-label color="primary">Event Name</ion-label>
+          <ion-input placeholder="Text Input"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary">Start Date</ion-label>
+            <ion-datetime displayFormat="MM-DD-YYYY" min="2017" max="2500"[(ngModel)]="start"></ion-datetime>
+        </ion-item> 
+          <ion-item>
+            <ion-label color="primary">End Date</ion-label>
+            <ion-datetime displayFormat="MM-DD-YYYY" min="2017" max="2500"[(ngModel)]="end"></ion-datetime>
+          </ion-item>
+          <ion-item>
+            <ion-label color="primary">Brief Discription</ion-label>
+            <ion-input placeholder="Text Input"></ion-input>
+          </ion-item>
+          <ion-label color="primary">Detailed Description</ion-label>
+          <ion-item>
+            
+            <!--<ion-input placeholder="Text Input"></ion-input>-->
+            <ion-textarea class="resize" placeholder="Detailed Description"></ion-textarea>
+          </ion-item>
+
+          <button ion-button full>Submit</button>
+    </ion-list>
+  </ion-content>
