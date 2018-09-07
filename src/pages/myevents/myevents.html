@@ -1,13 +1,39 @@
 <ion-header>
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>My Events</ion-title>
-    </ion-navbar>
-  </ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>My Events</ion-title>
+  </ion-navbar>
+</ion-header>
   
-  <ion-content padding>
-    <h3>My Events</h3>
-  
-  </ion-content>
+<ion-content padding>
+  <ion-card (click)="viewEvent()">
+    <ion-card-header>
+      UBS Hackathon : 9/10/2018
+    </ion-card-header>
+    <ion-card-content>
+      Nashville | 4th Floor | Training Room 2
+      Come join us...
+    </ion-card-content>
+  </ion-card>
+  <!--<ion-card (click)="viewEvent()">
+    <ion-card-header>
+      Lunch & Learn :	9/12/2018	
+    </ion-card-header>
+    <ion-card-content>
+      Nashville | 5th Floor | Multi-Purpose Room
+      Come join us...
+    </ion-card-content>
+  </ion-card>
+  <ion-card (click)="viewEvent()">
+    <ion-card-header>
+      UBS Veterans Network : 9/15/2018	
+    </ion-card-header>
+    <ion-card-content>
+      Nashville | 4th Floor | Zurich Room
+      Come join us...
+    </ion-card-content>
+  </ion-card>-->
+</ion-content>
+ 

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { ViewEventPage } from '../../pages/viewevent/viewevent'
 
 @Component({
   selector: 'page-myevents',
@@ -7,11 +8,11 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class MyEventsPage {
  
+ constructor(public navCtrl: NavController) {
 
-  /* itemTapped(event, item) {
-    // That's right, we're pushing to ourselves!
-    this.navCtrl.push(ListPage, {
-      item: item
-    });
-  } */
+  }
+
+  viewEvent(){
+    this.navCtrl.push(ViewEventPage);
+  }
 }
