@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
-  selector: 'page-list',
+  selector: 'page-viewevent',
   templateUrl: 'viewevent.html'
 })
 export class ViewEventPage {
@@ -18,6 +18,9 @@ export class ViewEventPage {
     }
     comment(id){
       //brings the user to a page where he can make a comment and rate the event
+    }
+    rate(num){
+      //this would store the rating and wait for the user to hit comment to add to DB
     }
 /*   itemTapped(event, item) {
     // That's right, we're pushing to ourselves!

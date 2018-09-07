@@ -22,10 +22,15 @@
             <ion-label color="primary">End Date</ion-label>
             <ion-datetime displayFormat="MM-DD-YYYY" min="2017" max="2500"[(ngModel)]="end"></ion-datetime>
           </ion-item>
+           <ion-item>
+            <ion-label>Start Time</ion-label>
+            <ion-datetime displayFormat="H:mm A" min="2017" max="2500"[(ngModel)]="end"></ion-datetime>
+          </ion-item>         
           <ion-item>
             <ion-label color="primary">Brief Discription</ion-label>
             <ion-input placeholder="Text Input"></ion-input>
           </ion-item>
+
           <ion-label color="primary">Detailed Description</ion-label>
           <ion-item>
             
