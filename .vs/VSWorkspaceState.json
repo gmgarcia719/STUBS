@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\assets",
+    "\\src\\assets\\data",
+    "\\src\\pages",
+    "\\src\\pages\\createevent",
+    "\\src\\pages\\home",
+    "\\src\\pages\\list",
+    "\\src\\pages\\myevents"
+  ],
+  "SelectedNode": "\\src\\pages\\home\\home.scss",
+  "PreviewInSolutionExplorer": false
+}

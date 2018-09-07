@@ -1,27 +1,38 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Events
-    </ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only (click)="downloadCSV()">
-          <ion-icon name="download"></ion-icon>
-        </button>
-    </ion-buttons>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>UBS Events</ion-title>
   </ion-navbar>
 </ion-header>
  
 <ion-content padding>
-  <ion-scroll scrollX="true" scrollY="true" class="data-scroll">
-    <table border="1" class="data-table">
-      <tr>
-        <td *ngFor="let header of headerRow" text-center><b>{{ header }}</b></td>
-      </tr>
-      <tr *ngFor="let row of csvData; let i = index">
-        <td *ngFor="let data of row; let j = index; trackBy: trackByFn">
-          <ion-input type="text" [(ngModel)]="csvData[i][j]"></ion-input>
-        </td>
-      </tr>
-    </table>
-  </ion-scroll>
+  <ion-card (click)="viewEvent()">
+    <ion-card-header>
+      UBS Hackathon : 9/10/2018
+    </ion-card-header>
+    <ion-card-content>
+      Nashville | 4th Floor | Training Room 2
+      Come join us...
+    </ion-card-content>
+  </ion-card>
+  <ion-card (click)="viewEvent()">
+    <ion-card-header>
+      Lunch & Learn :	9/12/2018	
+    </ion-card-header>
+    <ion-card-content>
+      Nashville | 5th Floor | Multi-Purpose Room
+      Come join us...
+    </ion-card-content>
+  </ion-card>
+  <ion-card (click)="viewEvent()">
+    <ion-card-header>
+      UBS Veterans Network : 9/15/2018	
+    </ion-card-header>
+    <ion-card-content>
+      Nashville | 4th Floor | Zurich Room
+      Come join us...
+    </ion-card-content>
+  </ion-card>
 </ion-content>
