@@ -10,16 +10,17 @@
       <ion-content>
 
         <ion-card>
-          <ion-card-title>
+          <ion-card-title align='center'>
             This is the Title of the Event
           </ion-card-title>
           <ion-card-content>
             <div>Date</div>
             <div> Time</div>
             <p>this is where the short dirdcriptioni of the event would go. this could have some good information about the event</p>
-            <button ion-button float-right round>More Info</button>
-            <button ion-button  float-right color='secondary' round>Signup</button>
+            <button ion-button float-right (click)="moreInfo(id)" round>More Info</button>
+            <button ion-button  float-right color='secondary' (click)="signUp(id)" round>Signup</button>
           </ion-card-content>
         </ion-card>
+        <button ion-button (click)="comment(id)" block>Comment</button>
 
       </ion-content>
